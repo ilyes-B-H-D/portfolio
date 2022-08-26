@@ -10,10 +10,10 @@ import { HashLink } from "react-router-hash-link";
 const Home = () => {
   return (
     <div
-      className=" md:m-10 lg:flex justify-center items-center dark overflow-hidden h-screen "
+      className=" md:m-10 lg:flex justify-around items-center dark overflow-hidden h-screen "
       id="home"
     >
-      <div className="flex items-center ml-2">
+      <div className="flex items-center mx-2">
         <div className="flex flex-col justify-center h-10 ">
           <a
             href="https://www.linkedin.com/in/ilyes-ben-haj-dahmane-53a95021a/"
@@ -58,7 +58,8 @@ const Home = () => {
           className="
           flex justify-center w-96 h-68
           lg:absolute
-          right-5
+          right-10
+          xl:right-32
           top-[30%]
           md:w-80
           lg:mr-10
@@ -68,7 +69,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" lg:ml-10 ml-4 flex flex-col justify-center">
+      <div className="flex flex-col justify-center">
         <h1 className="text-3xl font-medium lg:text-[4rem] lg:font-semibold">
           Hi, I’m Ilyes
         </h1>
