@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import { BrowserRouter } from "react-router-dom";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Navbar />
         <Home />
         <About />
+        <Skills/>
+        <Projects/>
         <Contact />
         <Footer />
       </div>

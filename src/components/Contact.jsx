@@ -4,7 +4,15 @@ import send from "../assets/send.svg";
 import phone from "../assets/phone.svg";
 import email from "../assets/email.svg";
 import location from "../assets/location.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, []);
+
   const form = useRef();
   const confirmationMsg = "";
   const sendEmail = (e) => {
@@ -35,8 +43,10 @@ export const Contact = () => {
         <span className="text-black p-3">-</span>
       </h1>
       <div className="bg-whiteYello h-full md:flex">
-        <div className="flex flex-col ml-[10%]">
-          <p className="mt-20 sm:ml-3 text-3xl font-medium ">Let's discuss your project</p>
+        <div data-aos='fade-right' className="flex flex-col ml-[10%]">
+          <p className="mt-20 sm:ml-3 text-3xl font-medium ">
+            Let's discuss your project
+          </p>
           <div className="flex items-center ">
             <img src={phone} alt="" height={40} width={40} className="my-6" />
             <div className="text-2xl font-semibold"> Phone </div>
@@ -54,14 +64,20 @@ export const Contact = () => {
           </span>
 
           <div className="flex items-center">
-            <img src={location} alt="" height={30} width={40} className="my-6" />
+            <img
+              src={location}
+              alt=""
+              height={30}
+              width={40}
+              className="my-6"
+            />
             <div className="text-2xl font-semibold"> Official Adress </div>
           </div>
           <span className="sm:ml-12 text-lightBlack">
             Djerba, Medenine, Tunisia
           </span>
         </div>
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <div  data-aos='fade-left' className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <form ref={form} onSubmit={sendEmail} className="space-y-8">
             <div className="md:flex justify-between ">
               <div className="flex-col">
@@ -96,7 +112,10 @@ export const Contact = () => {
                 />
               </div>
             </div>
-            <label htmlFor="name" className="block text-sm font-medium text-black">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-black"
+            >
               Your name
             </label>
             <input

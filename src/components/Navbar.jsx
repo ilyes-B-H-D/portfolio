@@ -35,10 +35,10 @@ const Navbar = () => {
               Skills
             </HashLink>
             <HashLink
-              to="#portfolio"
+              to="#projects"
               className="hover:text-blue text-xl font-semibold"
             >
-              Portfolio
+              Projects
             </HashLink>
             <HashLink
               to="#contact"
@@ -93,13 +93,13 @@ const Navbar = () => {
                 Skills
               </HashLink>
               <HashLink
-                to="#portfolio"
+                to="#projects"
                 className="text-white hover:text-black"
                 onClick={() => {
                   setNavbar(!navbar);
                 }}
               >
-                Portfolio
+                Projects
               </HashLink>
               <HashLink
                 to="#contact"

@@ -6,15 +6,21 @@ import twitter from "../assets/twitter.svg";
 import arrow_right from "../assets/arrow_right.svg";
 import arrow_down from "../assets/arrow_down.svg";
 import { HashLink } from "react-router-hash-link";
+import { useEffect } from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2500 });
+  }, []);
   return (
     <div
-      className=" md:m-10 lg:flex justify-around items-center dark overflow-hidden h-screen "
+      className=" md:m-10 xl:mx-14 lg:flex items-center dark overflow-hidden h-screen "
       id="home"
     >
       <div className="flex items-center mx-2">
-        <div className="flex flex-col justify-center h-10 ">
+        <div data-aos='fade-right' className="flex flex-col justify-center h-10 ">
           <a
             href="https://www.linkedin.com/in/ilyes-ben-haj-dahmane-53a95021a/"
             target="_blank"
@@ -55,28 +61,32 @@ const Home = () => {
           </a>
         </div>
         <div
+        data-aos='fade-left'
           className="
           flex justify-center w-96 h-68
           lg:absolute
           right-10
           xl:right-32
           top-[30%]
-          md:w-80
+          md:w-96
+          xl:w-[30rem]
+          xl:mb-40
+          xl:top-[20%]
           lg:mr-10
           m-4 lg:w-96 md:justify-end self-end	"
         >
           <img src={photo} alt="home page img" />
-        </div>
+        </div> 
       </div>
 
-      <div className="flex flex-col justify-center">
+      <div data-aos='fade-right' className="flex flex-col justify-center ml-4 xl:ml-20 ">
         <h1 className="text-3xl font-medium lg:text-[4rem] lg:font-semibold">
           Hi, I’m Ilyes
         </h1>
         <h3 className="dark:text-black text-lightBlack font-semibold mb-2 lg:mb-8 mt-2 lg:mt-10 lg:text-xl ">
           Front-End Developer
         </h3>
-        <p className=" w-[95%] lg:w-[50%] text-lightBlack mb-4 lg:mb-10">
+        <p className=" w-[95%] lg:w-[50%] lg:text-xl text-lightBlack mb-4 lg:mb-10">
           I will create an amazing modern responsive website for your business,
           you can contact me to get started by now !
         </p>
