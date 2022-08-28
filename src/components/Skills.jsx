@@ -29,7 +29,7 @@ const Skills = () => {
       </h1>
       <div className="flex flex-col md:flex-row md:justify-around ">
         {/* coding skills */}
-        <div data-aos='fade-right' className="flex justify-around flex-wrap mx-10 my-5 md:w-[25%] bg-black rounded-3xl p-6 opacity-80">
+        <div data-aos='fade-up' className="flex justify-around flex-wrap mx-10 my-5 md:w-[25%] bg-black rounded-3xl p-6 opacity-80">
           <img src={react} alt="" className="w-20 h-20 p-1" />
           <img src={vue} alt="" className="w-20 h-20 p-1" />
           <img src={js} alt="" className="w-20 h-20 p-1" />
@@ -47,7 +47,7 @@ const Skills = () => {
           <img src={firebase} alt="" className="w-20 h-20 p-1" />
         </div>
         {/* graphic skills */}
-        <div  data-aos='fade-left' className="flex justify-around items-start flex-wrap mx-10 my-5 md:w-[25%] bg-black rounded-3xl p-6 opacity-80">
+        <div  data-aos='fade-up' className="flex justify-around items-start flex-wrap mx-10 my-5 md:w-[25%] bg-black rounded-3xl p-6 opacity-80">
           <img src={figma} alt="" className="w-20 h-20 p-1" />
           <img src={adobexd} alt="" className="w-20 h-20 p-1" />
         </div>

@@ -123,7 +123,7 @@ export const Contact = () => {
               name="user_name"
               id="name"
               className="shadow-sm bg-bgInput bg-opacity-10 text-black text-sm rounded-lg  block w-full p-2.5"
-              placeholder="name@gmail.com"
+              placeholder="your name"
               required
             />
             <div className="sm:col-span-2">
@@ -147,7 +147,7 @@ export const Contact = () => {
             >
               <input
                 type="submit"
-                value="Send Message"
+                value="send"
                 className="hover:cursor-pointer"
               />
               <img

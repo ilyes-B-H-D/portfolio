@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./index.css";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
@@ -12,7 +11,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="overflow-hidden App">
         <Navbar />
         <Home />
         <About />

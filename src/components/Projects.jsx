@@ -30,7 +30,7 @@ const Projects = () => {
       </h1>
       <div className="flex flex-col md:flex-row md:m-10 ">
         {/* makhbazti */}
-        <div  data-aos='fade-right' className=" m-8 bg-white p-5 rounded-xl  md:w[25%]">
+        <div  data-aos='fade-up' className=" m-8 bg-white p-5 rounded-xl  md:w[25%]">
           <img src={makhbazti} alt="" className="z-[-10]" />
           <p className="self-center text-lightBlack font-bold text-xl my-2">
             Makhbazti
@@ -94,7 +94,7 @@ const Projects = () => {
           </div>
         </div>
         {/* bookmark */}
-        <div  data-aos='fade-left' className=" m-8 bg-white p-5 rounded-xl  md:w[25%]">
+        <div  data-aos='fade-up' className=" m-8 bg-white p-5 rounded-xl  md:w[25%]">
           <img src={bookmark} alt="" className="z-[-10]" />
           <p className="self-center text-lightBlack font-bold text-xl my-2">
             bookmark
