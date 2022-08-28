@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import send from "../assets/send.svg";
 import phone from "../assets/phone.svg";
@@ -12,12 +12,11 @@ export const Contact = () => {
   useEffect(() => {
     Aos.init({ duration: 2500 });
   }, []);
+  const {confirmationMsg, setConfirmationMsg}=useState("");
 
   const form = useRef();
-  const confirmationMsg = "";
   const sendEmail = (e) => {
     e.preventDefault();
-    confirmationMsg = "flex";
     emailjs
       .sendForm(
         "service_995scxs",
@@ -27,6 +26,7 @@ export const Contact = () => {
       )
       .then(
         (result) => {
+          setConfirmationMsg("msg");
           console.log(result.text);
         },
         (error) => {
@@ -147,7 +147,7 @@ export const Contact = () => {
             >
               <input
                 type="submit"
-                value="send"
+                value="Send Message"
                 className="hover:cursor-pointer"
               />
               <img
